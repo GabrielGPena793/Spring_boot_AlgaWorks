@@ -1,0 +1,24 @@
+package com.gabriel.apilFood;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.gabriel.apilFood.notificacao.NotificadorEmail;
+import com.gabriel.apilFood.service.AtivacaoClienteService;
+
+@Configuration
+public class FoodConfig {
+
+	@Bean
+	public NotificadorEmail notificadorEmail() {
+		NotificadorEmail notificador = new NotificadorEmail("smtp.foodmail.com.br");
+		notificador.setCaixaAlta(true);
+		
+		return notificador;
+	}
+	
+	@Bean
+	public AtivacaoClienteService ativacaoCliente() {
+		return new AtivacaoClienteService(notificadorEmail());
+	}
+}

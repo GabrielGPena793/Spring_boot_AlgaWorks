@@ -1,0 +1,19 @@
+package com.gabriel.apilFood;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@SpringBootApplication
+public class FoodApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FoodApiApplication.class, args);
+	}
+
+	@GetMapping("/")
+	public void startProject() {
+		String ola = "aew";
+		System.out.println(ola);
+	}
+}

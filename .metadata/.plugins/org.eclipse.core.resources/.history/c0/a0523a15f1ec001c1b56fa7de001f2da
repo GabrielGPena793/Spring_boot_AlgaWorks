@@ -1,0 +1,16 @@
+package com.gabriel.apilFood;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class NotificacaoSMS {
+
+	public NotificacaoSMS() {
+		System.out.println("contructor chamado");
+	}
+	
+	public void notificar() {
+		System.out.println("Notificando %s do SMS %s: %s");
+	}
+
+}

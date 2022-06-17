@@ -1,0 +1,19 @@
+package service;
+
+import com.gabriel.apilFood.modelo.Cliente;
+import com.gabriel.apilFood.notificacao.NotificacaoSMS;
+
+public class AtivacaoClienteService {
+
+	private NotificacaoSMS notificacao;
+
+	public AtivacaoClienteService(NotificacaoSMS notificacao) {
+		this.notificacao = notificacao;
+	}
+	
+	public void ativarNotificacao(Cliente cliente, String mensagem) {
+		cliente.setAtivo(true);
+		
+		notificacao.notificar(cliente, mensagem);
+	}
+}

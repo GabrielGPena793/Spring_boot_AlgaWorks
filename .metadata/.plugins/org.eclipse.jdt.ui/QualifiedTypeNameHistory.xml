@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+    <fullyQualifiedTypeName name="dependency_injection.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="dependency_injection.notificacao.Notificacao"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.gabriel.apilFood.notificacao.NotificacaoSMS"/>
+    <fullyQualifiedTypeName name="modelo.Cliente"/>
+    <fullyQualifiedTypeName name="dependency_injection.notificacao.NotificacaoSMS"/>
+    <fullyQualifiedTypeName name="com.gabriel.apilFood.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="com.gabriel.apilFood.service.AtivacaoClienteService"/>
+    <fullyQualifiedTypeName name="com.gabriel.apilFood.notificacao.NotificadorEmail"/>
+</qualifiedTypeNameHistroy>

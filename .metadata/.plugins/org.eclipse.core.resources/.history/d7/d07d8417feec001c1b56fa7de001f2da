@@ -1,0 +1,20 @@
+package com.gabriel.apilFood.notificacao;
+
+import org.springframework.stereotype.Component;
+
+import com.gabriel.apilFood.modelo.Cliente;
+
+@Component
+public class NotificacaoSMS implements{
+
+	public NotificacaoSMS() {
+		System.out.println("contructor chamado");
+	}
+
+	@Override
+	public void notificar(Cliente cliente, String mensagem) {
+		System.out.println("Notificando %s do SMS %s: %s");
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.gabriel.apilFood;
+
+import dependency_injection.modelo.Cliente;
+import dependency_injection.notificacao.Notificacao;
+
+public class NotificacaoSMS implements Notificacao {
+
+	@Override
+	public void notificar(Cliente cliente, String mensagem) {
+		System.out.printf("Notificando %s do SMS %s: %s", 
+				cliente.getName(), cliente.getEmail(), "SMS enviado com sucesso");
+	}
+
+}

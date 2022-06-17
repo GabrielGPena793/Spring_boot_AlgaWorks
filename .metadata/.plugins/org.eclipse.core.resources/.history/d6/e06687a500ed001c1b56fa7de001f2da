@@ -1,0 +1,13 @@
+package com.gabriel.apilFood;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.gabriel.apilFood.notificacao.NotificadorEmail;
+
+@Configuration
+public class FoodConfig {
+
+	public NotificadorEmail notificadorEmail() {
+		NotificadorEmail notificador = new NotificadorEmail("smtp.foodmail.com.br");
+	}
+}
