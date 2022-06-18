@@ -1,0 +1,28 @@
+package com.gabriel.apilFood.notificacao;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import com.gabriel.apilFood.modelo.Cliente;
+
+@Component
+public class NotificadorEmail implements Notificacao {
+
+	@Value("${notificador.email.host-server}")
+	private String hostServidorSmtp;
+	
+	
+
+	public NotificadorEmail() {
+		this.hostServidorSmtp = hostServidorSmtp;
+	}
+
+
+
+	@Override
+	public void notificar(Cliente cliente, String mensagem) {
+		System.out.printf("Notificando %s através do email %s usando SMPT %s: %s", 
+				cliente.getName(), cliente.getEmail(), this.hostServidorSmtp, mensagem);
+	}
+	
+}

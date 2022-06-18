@@ -1,0 +1,20 @@
+package com.gabriel.apilFood.notificacao;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties("notificador.email")
+public class NotificadorProperties {
+
+	/**
+	 *  Host do servidor de email
+	 */
+	private String hostServidor;
+	
+	/**
+	 *  Porta do servidor de email
+	 */
+	private Integer portaServidor;
+	
+}

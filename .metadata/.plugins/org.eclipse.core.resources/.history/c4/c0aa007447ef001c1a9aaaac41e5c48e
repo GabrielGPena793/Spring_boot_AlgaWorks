@@ -1,0 +1,14 @@
+package com.gabriel.apilFood;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+
+@SpringBootApplication
+@ConfigurationPropertiesScan("src.main.resources.aplication.properties")
+public class FoodApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FoodApiApplication.class, args);
+	}
+}

@@ -1,0 +1,5 @@
+package com.gabriel.apilFood.notificacao;
+
+public class NotificadorProperties {
+
+}
