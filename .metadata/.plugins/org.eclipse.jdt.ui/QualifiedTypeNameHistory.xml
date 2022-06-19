@@ -13,4 +13,9 @@
     <fullyQualifiedTypeName name="com.gabriel.apilFood.modelo.Cliente"/>
     <fullyQualifiedTypeName name="com.gabriel.apilFood.service.AtivacaoClienteService"/>
     <fullyQualifiedTypeName name="com.gabriel.apilFood.notificacao.NotificadorEmail"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
 </qualifiedTypeNameHistroy>
